@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 // Index page
 app.route('/')
     .get(function(req, res) {
-        res.sendFile(process.cwd() + '/views/index.html')
+        res.sendFile(process.cwd() + '/views/dashboard.html')
     });
 
 // Dashboard page

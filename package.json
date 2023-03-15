@@ -4,17 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "tailwind": "tailwindcss build public/assets/css/tailwind.css -o public/assets/css/tailwind.output.css",
+    "build": "postcss public/assets/css/tailwind.css -o public/assets/css/tailwind.output.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongodb": "^5.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "autoprefixer": "9.8.0",
+    "color": "^4.2.3",
+    "cssnano": "^5.1.15",
+    "nodemon": "^2.0.20",
+    "postcss-cli": "^10.1.0",
+    "prettier": "2.8.4",
+    "tailwindcss": "1.9.6",
+    "tailwindcss-multi-theme": "^1.0.4"
   }
 }
